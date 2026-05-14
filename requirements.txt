@@ -1,0 +1,11 @@
+# Algoritma II - Donem Sonu Projesi: gerekli Python paketleri
+# Kurulum:  pip install -r requirements.txt
+#
+# Not: Algoritmalarin kendisi yalnizca standart kutuphane + numpy kullanir.
+# matplotlib grafikler, python-docx rapor, python-pptx sunum icindir.
+# PDF donusumu icin LibreOffice (sistem paketi) gerekir; pip ile kurulmaz.
+
+numpy>=1.24
+matplotlib>=3.5
+python-docx>=1.0.0
+python-pptx>=0.6.21

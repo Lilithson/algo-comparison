@@ -1,0 +1,1458 @@
+{
+  "meta": {
+    "profile": "full",
+    "timestamp": "2026-05-14T14:58:27",
+    "seed": 20252,
+    "python": "3.12.3",
+    "config": {
+      "scaling_sizes": [
+        100,
+        200,
+        400,
+        800,
+        1600,
+        3200,
+        6400,
+        12800
+      ],
+      "scaling_avg_degree": 4,
+      "density_n": 1000,
+      "density_fracs": [
+        0.01,
+        0.02,
+        0.05,
+        0.1,
+        0.2,
+        0.35,
+        0.5
+      ],
+      "manyq_n": 1000,
+      "manyq_avg_degree": 4,
+      "manyq_counts": [
+        1,
+        5,
+        20,
+        100,
+        500,
+        2000,
+        10000,
+        50000
+      ],
+      "real_subgraph_sizes": [
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "real_full_queries": 20,
+      "sources": 5,
+      "repeats": 3
+    },
+    "time_budget_sec": 90.0,
+    "algo_node_cap": {
+      "dijkstra_heap": 12800,
+      "dijkstra_array": 12800,
+      "bellman_ford": 6400,
+      "floyd_warshall": 2500
+    },
+    "elapsed_sec": 462.6622426250251
+  },
+  "scaling": [
+    {
+      "experiment": "scaling",
+      "n": 100,
+      "m": 400,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 36456,
+        "adjacency_list": 40904,
+        "adjacency_matrix": 80128
+      },
+      "time_per_query": 0.00020335998851805925,
+      "peak_memory_bytes": 9608,
+      "relaxations": 400,
+      "pops": 100,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 100,
+      "m": 400,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 36456,
+        "adjacency_list": 40904,
+        "adjacency_matrix": 80128
+      },
+      "time_per_query": 0.0018056329572573304,
+      "peak_memory_bytes": 18088,
+      "relaxations": 10000,
+      "pops": 100,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 100,
+      "m": 400,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 36456,
+        "adjacency_list": 40904,
+        "adjacency_matrix": 80128
+      },
+      "time_per_query": 0.0003917210269719362,
+      "peak_memory_bytes": 4776,
+      "relaxations": 2900,
+      "pops": 0,
+      "passes": 8
+    },
+    {
+      "experiment": "scaling",
+      "n": 100,
+      "m": 400,
+      "graph_kind": "sparse",
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 36456,
+        "adjacency_list": 40904,
+        "adjacency_matrix": 80128
+      },
+      "time_per_query": 0.0069675970589742064,
+      "preprocess_time": 0.0069675970589742064,
+      "peak_memory_bytes": 474304,
+      "relaxations": 1000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 200,
+      "m": 800,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 73336,
+        "adjacency_list": 81720,
+        "adjacency_matrix": 320128
+      },
+      "time_per_query": 0.0004341420717537403,
+      "peak_memory_bytes": 19816,
+      "relaxations": 800,
+      "pops": 200,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 200,
+      "m": 800,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 73336,
+        "adjacency_list": 81720,
+        "adjacency_matrix": 320128
+      },
+      "time_per_query": 0.0033705270616337657,
+      "peak_memory_bytes": 25088,
+      "relaxations": 40000,
+      "pops": 200,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 200,
+      "m": 800,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 73336,
+        "adjacency_list": 81720,
+        "adjacency_matrix": 320128
+      },
+      "time_per_query": 0.0008035709615796804,
+      "peak_memory_bytes": 8776,
+      "relaxations": 4111,
+      "pops": 0,
+      "passes": 6
+    },
+    {
+      "experiment": "scaling",
+      "n": 200,
+      "m": 800,
+      "graph_kind": "sparse",
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 73336,
+        "adjacency_list": 81720,
+        "adjacency_matrix": 320128
+      },
+      "time_per_query": 0.024365478078834713,
+      "preprocess_time": 0.024365478078834713,
+      "peak_memory_bytes": 1494704,
+      "relaxations": 8000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 400,
+      "m": 1600,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 155532,
+        "adjacency_list": 171980,
+        "adjacency_matrix": 1280128
+      },
+      "time_per_query": 0.0009088990045711398,
+      "peak_memory_bytes": 35568,
+      "relaxations": 1600,
+      "pops": 400,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 400,
+      "m": 1600,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 155532,
+        "adjacency_list": 171980,
+        "adjacency_matrix": 1280128
+      },
+      "time_per_query": 0.006807015975937247,
+      "peak_memory_bytes": 44304,
+      "relaxations": 160000,
+      "pops": 400,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 400,
+      "m": 1600,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 155532,
+        "adjacency_list": 171980,
+        "adjacency_matrix": 1280128
+      },
+      "time_per_query": 0.002058574929833412,
+      "peak_memory_bytes": 16776,
+      "relaxations": 10939,
+      "pops": 0,
+      "passes": 8
+    },
+    {
+      "experiment": "scaling",
+      "n": 400,
+      "m": 1600,
+      "graph_kind": "sparse",
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 155532,
+        "adjacency_list": 171980,
+        "adjacency_matrix": 1280128
+      },
+      "time_per_query": 0.1750614650081843,
+      "preprocess_time": 0.1750614650081843,
+      "peak_memory_bytes": 5575536,
+      "relaxations": 64000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 800,
+      "m": 3200,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 322888,
+        "adjacency_list": 359464,
+        "adjacency_matrix": 5120128
+      },
+      "time_per_query": 0.0017114159418269992,
+      "peak_memory_bytes": 70272,
+      "relaxations": 3200,
+      "pops": 800,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 800,
+      "m": 3200,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 322888,
+        "adjacency_list": 359464,
+        "adjacency_matrix": 5120128
+      },
+      "time_per_query": 0.01764431199990213,
+      "peak_memory_bytes": 84528,
+      "relaxations": 640000,
+      "pops": 800,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 800,
+      "m": 3200,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 322888,
+        "adjacency_list": 359464,
+        "adjacency_matrix": 5120128
+      },
+      "time_per_query": 0.004268974997103214,
+      "peak_memory_bytes": 32776,
+      "relaxations": 27288,
+      "pops": 0,
+      "passes": 10
+    },
+    {
+      "experiment": "scaling",
+      "n": 800,
+      "m": 3200,
+      "graph_kind": "sparse",
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 322888,
+        "adjacency_list": 359464,
+        "adjacency_matrix": 5120128
+      },
+      "time_per_query": 2.6874397509964183,
+      "preprocess_time": 2.6874397509964183,
+      "peak_memory_bytes": 21897136,
+      "relaxations": 512000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 1600,
+      "m": 6400,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 659628,
+        "adjacency_list": 731116,
+        "adjacency_matrix": 20480128
+      },
+      "time_per_query": 0.00441869453061372,
+      "peak_memory_bytes": 139440,
+      "relaxations": 6400,
+      "pops": 1600,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 1600,
+      "m": 6400,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 659628,
+        "adjacency_list": 731116,
+        "adjacency_matrix": 20480128
+      },
+      "time_per_query": 0.04131832253187895,
+      "peak_memory_bytes": 165552,
+      "relaxations": 2560000,
+      "pops": 1600,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 1600,
+      "m": 6400,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 659628,
+        "adjacency_list": 731116,
+        "adjacency_matrix": 20480128
+      },
+      "time_per_query": 0.009110835497267544,
+      "peak_memory_bytes": 64776,
+      "relaxations": 53334,
+      "pops": 0,
+      "passes": 10
+    },
+    {
+      "experiment": "scaling",
+      "n": 1600,
+      "m": 6400,
+      "graph_kind": "sparse",
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 659628,
+        "adjacency_list": 731116,
+        "adjacency_matrix": 20480128
+      },
+      "time_per_query": 24.787301763077267,
+      "preprocess_time": 24.787301763077267,
+      "peak_memory_bytes": 87180336,
+      "relaxations": 4096000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 3200,
+      "m": 12800,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 1335440,
+        "adjacency_list": 1473424,
+        "adjacency_matrix": 81920128
+      },
+      "time_per_query": 0.011798411491326988,
+      "peak_memory_bytes": 277584,
+      "relaxations": 12800,
+      "pops": 3200,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 3200,
+      "m": 12800,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 1335440,
+        "adjacency_list": 1473424,
+        "adjacency_matrix": 81920128
+      },
+      "time_per_query": 0.09524566499749199,
+      "peak_memory_bytes": 328976,
+      "relaxations": 10240000,
+      "pops": 3200,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 3200,
+      "m": 12800,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 1335440,
+        "adjacency_list": 1473424,
+        "adjacency_matrix": 81920128
+      },
+      "time_per_query": 0.025018287007696927,
+      "peak_memory_bytes": 128776,
+      "relaxations": 117268,
+      "pops": 0,
+      "passes": 11
+    },
+    {
+      "experiment": "scaling",
+      "n": 3200,
+      "m": 12800,
+      "algorithm": "floyd_warshall",
+      "feasible": false,
+      "note": "karmasiklik/bellek siniri (n>2500)",
+      "time_per_query": null,
+      "peak_memory_bytes": null
+    },
+    {
+      "experiment": "scaling",
+      "n": 6400,
+      "m": 25600,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 2686976,
+        "adjacency_list": 2962176,
+        "adjacency_matrix": 327680128
+      },
+      "time_per_query": 0.02579696208704263,
+      "peak_memory_bytes": 559968,
+      "relaxations": 25600,
+      "pops": 6400,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 6400,
+      "m": 25600,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 2686976,
+        "adjacency_list": 2962176,
+        "adjacency_matrix": 327680128
+      },
+      "time_per_query": 0.36352198210079223,
+      "peak_memory_bytes": 654864,
+      "relaxations": 40960000,
+      "pops": 6400,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 6400,
+      "m": 25600,
+      "graph_kind": "sparse",
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 2686976,
+        "adjacency_list": 2962176,
+        "adjacency_matrix": 327680128
+      },
+      "time_per_query": 0.05558819603174925,
+      "peak_memory_bytes": 256776,
+      "relaxations": 250680,
+      "pops": 0,
+      "passes": 12
+    },
+    {
+      "experiment": "scaling",
+      "n": 6400,
+      "m": 25600,
+      "algorithm": "floyd_warshall",
+      "feasible": false,
+      "note": "daha kucuk boyutta uygulanabilirlik siniri asildi",
+      "time_per_query": null,
+      "peak_memory_bytes": null
+    },
+    {
+      "experiment": "scaling",
+      "n": 12800,
+      "m": 51200,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 5396216,
+        "adjacency_list": 5940984,
+        "adjacency_matrix": 1310720128
+      },
+      "time_per_query": 0.0811562710441649,
+      "peak_memory_bytes": 1117416,
+      "relaxations": 51200,
+      "pops": 12800,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 12800,
+      "m": 51200,
+      "graph_kind": "sparse",
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "rep_memory": {
+        "edge_list": 5396216,
+        "adjacency_list": 5940984,
+        "adjacency_matrix": 1310720128
+      },
+      "time_per_query": 1.1991689370479435,
+      "peak_memory_bytes": 1308912,
+      "relaxations": 163840000,
+      "pops": 12800,
+      "passes": 0
+    },
+    {
+      "experiment": "scaling",
+      "n": 12800,
+      "m": 51200,
+      "algorithm": "bellman_ford",
+      "feasible": false,
+      "note": "karmasiklik/bellek siniri (n>6400)",
+      "time_per_query": null,
+      "peak_memory_bytes": null
+    },
+    {
+      "experiment": "scaling",
+      "n": 12800,
+      "m": 51200,
+      "algorithm": "floyd_warshall",
+      "feasible": false,
+      "note": "daha kucuk boyutta uygulanabilirlik siniri asildi",
+      "time_per_query": null,
+      "peak_memory_bytes": null
+    }
+  ],
+  "density": [
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 12030,
+      "edge_frac": 0.01,
+      "density": 0.012042042042042043,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.009021784004289657,
+      "peak_memory_bytes": 165152,
+      "relaxations": 12030,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 12030,
+      "edge_frac": 0.01,
+      "density": 0.012042042042042043,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.03168726048897952,
+      "peak_memory_bytes": 105024,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 12030,
+      "edge_frac": 0.01,
+      "density": 0.012042042042042043,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.030794747988693416,
+      "peak_memory_bytes": 40776,
+      "relaxations": 90227,
+      "pops": 0,
+      "passes": 8
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 12030,
+      "edge_frac": 0.01,
+      "density": 0.012042042042042043,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 6.298610406927764,
+      "preprocess_time": 6.298610406927764,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 22030,
+      "edge_frac": 0.02,
+      "density": 0.022052052052052053,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.017626217508222908,
+      "peak_memory_bytes": 214520,
+      "relaxations": 22030,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 22030,
+      "edge_frac": 0.02,
+      "density": 0.022052052052052053,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.07084910897538066,
+      "peak_memory_bytes": 104928,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 22030,
+      "edge_frac": 0.02,
+      "density": 0.022052052052052053,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.07894494844367728,
+      "peak_memory_bytes": 40776,
+      "relaxations": 216235,
+      "pops": 0,
+      "passes": 10
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 22030,
+      "edge_frac": 0.02,
+      "density": 0.022052052052052053,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 7.310332680004649,
+      "preprocess_time": 7.310332680004649,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 51960,
+      "edge_frac": 0.05,
+      "density": 0.05201201201201201,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.0260333230253309,
+      "peak_memory_bytes": 281792,
+      "relaxations": 51960,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 51960,
+      "edge_frac": 0.05,
+      "density": 0.05201201201201201,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.0595472619170323,
+      "peak_memory_bytes": 105024,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 51960,
+      "edge_frac": 0.05,
+      "density": 0.05201201201201201,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.27815003599971533,
+      "peak_memory_bytes": 40776,
+      "relaxations": 412973,
+      "pops": 0,
+      "passes": 8
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 51960,
+      "edge_frac": 0.05,
+      "density": 0.05201201201201201,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 6.699329116032459,
+      "preprocess_time": 6.699329116032459,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 101372,
+      "edge_frac": 0.1,
+      "density": 0.10147347347347348,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.04544093902222812,
+      "peak_memory_bytes": 343128,
+      "relaxations": 101372,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 101372,
+      "edge_frac": 0.1,
+      "density": 0.10147347347347348,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.020363611984066665,
+      "peak_memory_bytes": 104416,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 101372,
+      "edge_frac": 0.1,
+      "density": 0.10147347347347348,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.23012961901258677,
+      "peak_memory_bytes": 40776,
+      "relaxations": 909481,
+      "pops": 0,
+      "passes": 9
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 101372,
+      "edge_frac": 0.1,
+      "density": 0.10147347347347348,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 7.1693025110289454,
+      "preprocess_time": 7.1693025110289454,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 201766,
+      "edge_frac": 0.2,
+      "density": 0.20196796796796798,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.16236822202336043,
+      "peak_memory_bytes": 392848,
+      "relaxations": 201766,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 201766,
+      "edge_frac": 0.2,
+      "density": 0.20196796796796798,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.024619332049041986,
+      "peak_memory_bytes": 104672,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 201766,
+      "edge_frac": 0.2,
+      "density": 0.20196796796796798,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.5048503089929,
+      "peak_memory_bytes": 40776,
+      "relaxations": 1812284,
+      "pops": 0,
+      "passes": 9
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 201766,
+      "edge_frac": 0.2,
+      "density": 0.20196796796796798,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 6.480699138948694,
+      "preprocess_time": 6.480699138948694,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 350424,
+      "edge_frac": 0.35,
+      "density": 0.35077477477477476,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.17929072596598417,
+      "peak_memory_bytes": 438920,
+      "relaxations": 350424,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 350424,
+      "edge_frac": 0.35,
+      "density": 0.35077477477477476,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.15565808408427984,
+      "peak_memory_bytes": 105088,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 350424,
+      "edge_frac": 0.35,
+      "density": 0.35077477477477476,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.5184757129754871,
+      "peak_memory_bytes": 40776,
+      "relaxations": 2799263,
+      "pops": 0,
+      "passes": 8
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 350424,
+      "edge_frac": 0.35,
+      "density": 0.35077477477477476,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 7.523858041968197,
+      "preprocess_time": 7.523858041968197,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 500834,
+      "edge_frac": 0.5,
+      "density": 0.5013353353353354,
+      "algorithm": "dijkstra_heap",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.2539262439822778,
+      "peak_memory_bytes": 465120,
+      "relaxations": 500834,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 500834,
+      "edge_frac": 0.5,
+      "density": 0.5013353353353354,
+      "algorithm": "dijkstra_array",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.02283161203376949,
+      "peak_memory_bytes": 104352,
+      "relaxations": 1000000,
+      "pops": 1000,
+      "passes": 0
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 500834,
+      "edge_frac": 0.5,
+      "density": 0.5013353353353354,
+      "algorithm": "bellman_ford",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 0.6847112000687048,
+      "peak_memory_bytes": 40776,
+      "relaxations": 2999987,
+      "pops": 0,
+      "passes": 6
+    },
+    {
+      "experiment": "density",
+      "n": 1000,
+      "m": 500834,
+      "edge_frac": 0.5,
+      "density": 0.5013353353353354,
+      "algorithm": "floyd_warshall",
+      "feasible": true,
+      "note": "",
+      "time_per_query": 5.985129249049351,
+      "preprocess_time": 5.985129249049351,
+      "peak_memory_bytes": 34137936,
+      "relaxations": 1000000000,
+      "pops": 0,
+      "passes": 0
+    }
+  ],
+  "many_queries": {
+    "n": 1000,
+    "m": 4000,
+    "dijkstra_heap_unit": 0.002889933530241251,
+    "dijkstra_array_unit": 0.02704622596502304,
+    "floyd_warshall_preprocess": 6.731791509897448,
+    "floyd_warshall_lookup_unit": 7.188233453780413e-07,
+    "counts": [
+      1,
+      5,
+      20,
+      100,
+      500,
+      2000,
+      10000,
+      50000
+    ],
+    "totals": [
+      {
+        "Q": 1,
+        "dijkstra_heap": 0.002889933530241251,
+        "dijkstra_array": 0.02704622596502304,
+        "floyd_warshall": 6.731792228720794
+      },
+      {
+        "Q": 5,
+        "dijkstra_heap": 0.014449667651206255,
+        "dijkstra_array": 0.1352311298251152,
+        "floyd_warshall": 6.731795104014175
+      },
+      {
+        "Q": 20,
+        "dijkstra_heap": 0.05779867060482502,
+        "dijkstra_array": 0.5409245193004608,
+        "floyd_warshall": 6.731805886364356
+      },
+      {
+        "Q": 100,
+        "dijkstra_heap": 0.2889933530241251,
+        "dijkstra_array": 2.704622596502304,
+        "floyd_warshall": 6.731863392231986
+      },
+      {
+        "Q": 500,
+        "dijkstra_heap": 1.4449667651206255,
+        "dijkstra_array": 13.52311298251152,
+        "floyd_warshall": 6.732150921570137
+      },
+      {
+        "Q": 2000,
+        "dijkstra_heap": 5.779867060482502,
+        "dijkstra_array": 54.09245193004608,
+        "floyd_warshall": 6.733229156588204
+      },
+      {
+        "Q": 10000,
+        "dijkstra_heap": 28.89933530241251,
+        "dijkstra_array": 270.4622596502304,
+        "floyd_warshall": 6.738979743351228
+      },
+      {
+        "Q": 50000,
+        "dijkstra_heap": 144.49667651206255,
+        "dijkstra_array": 1352.311298251152,
+        "floyd_warshall": 6.76773267716635
+      }
+    ],
+    "breakeven_Q": 2329.9727409770735
+  },
+  "real": {
+    "subgraphs": [
+      {
+        "experiment": "real_subgraph",
+        "n": 500,
+        "m": 1342,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_heap",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 143384,
+          "adjacency_list": 170056,
+          "adjacency_matrix": 2000128
+        },
+        "time_per_query": 0.000808771001175046,
+        "peak_memory_bytes": 28008,
+        "relaxations": 1342,
+        "pops": 500,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 500,
+        "m": 1342,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_array",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 143384,
+          "adjacency_list": 170056,
+          "adjacency_matrix": 2000128
+        },
+        "time_per_query": 0.008885990944691002,
+        "peak_memory_bytes": 53000,
+        "relaxations": 250000,
+        "pops": 500,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 500,
+        "m": 1342,
+        "graph_kind": "real_road",
+        "algorithm": "bellman_ford",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 143384,
+          "adjacency_list": 170056,
+          "adjacency_matrix": 2000128
+        },
+        "time_per_query": 0.0025422900216653943,
+        "peak_memory_bytes": 20776,
+        "relaxations": 12161,
+        "pops": 0,
+        "passes": 13
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 500,
+        "m": 1342,
+        "graph_kind": "real_road",
+        "algorithm": "floyd_warshall",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 143384,
+          "adjacency_list": 170056,
+          "adjacency_matrix": 2000128
+        },
+        "time_per_query": 0.378725221962668,
+        "preprocess_time": 0.378725221962668,
+        "peak_memory_bytes": 8635936,
+        "relaxations": 125000000,
+        "pops": 0,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 1000,
+        "m": 2744,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_heap",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 292600,
+          "adjacency_list": 345240,
+          "adjacency_matrix": 8000128
+        },
+        "time_per_query": 0.001654991996474564,
+        "peak_memory_bytes": 52648,
+        "relaxations": 2744,
+        "pops": 1000,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 1000,
+        "m": 2744,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_array",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 292600,
+          "adjacency_list": 345240,
+          "adjacency_matrix": 8000128
+        },
+        "time_per_query": 0.021476460970006883,
+        "peak_memory_bytes": 104160,
+        "relaxations": 1000000,
+        "pops": 1000,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 1000,
+        "m": 2744,
+        "graph_kind": "real_road",
+        "algorithm": "bellman_ford",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 292600,
+          "adjacency_list": 345240,
+          "adjacency_matrix": 8000128
+        },
+        "time_per_query": 0.006140001001767814,
+        "peak_memory_bytes": 40776,
+        "relaxations": 37225,
+        "pops": 0,
+        "passes": 17
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 1000,
+        "m": 2744,
+        "graph_kind": "real_road",
+        "algorithm": "floyd_warshall",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 292600,
+          "adjacency_list": 345240,
+          "adjacency_matrix": 8000128
+        },
+        "time_per_query": 6.462533023906872,
+        "preprocess_time": 6.462533023906872,
+        "peak_memory_bytes": 34137936,
+        "relaxations": 1000000000,
+        "pops": 0,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 2000,
+        "m": 5556,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_heap",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 592088,
+          "adjacency_list": 693592,
+          "adjacency_matrix": 32000128
+        },
+        "time_per_query": 0.003759873507078737,
+        "peak_memory_bytes": 102976,
+        "relaxations": 5556,
+        "pops": 2000,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 2000,
+        "m": 5556,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_array",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 592088,
+          "adjacency_list": 693592,
+          "adjacency_matrix": 32000128
+        },
+        "time_per_query": 0.07251474697841331,
+        "peak_memory_bytes": 206192,
+        "relaxations": 4000000,
+        "pops": 2000,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 2000,
+        "m": 5556,
+        "graph_kind": "real_road",
+        "algorithm": "bellman_ford",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 592088,
+          "adjacency_list": 693592,
+          "adjacency_matrix": 32000128
+        },
+        "time_per_query": 0.02697418100433424,
+        "peak_memory_bytes": 80776,
+        "relaxations": 62430,
+        "pops": 0,
+        "passes": 17
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 2000,
+        "m": 5556,
+        "graph_kind": "real_road",
+        "algorithm": "floyd_warshall",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 592088,
+          "adjacency_list": 693592,
+          "adjacency_matrix": 32000128
+        },
+        "time_per_query": 44.62684194499161,
+        "preprocess_time": 44.62684194499161,
+        "peak_memory_bytes": 136141936,
+        "relaxations": 8000000000,
+        "pops": 0,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 4000,
+        "m": 11120,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_heap",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 1186424,
+          "adjacency_list": 1387736,
+          "adjacency_matrix": 128000128
+        },
+        "time_per_query": 0.00734512199414894,
+        "peak_memory_bytes": 202616,
+        "relaxations": 11120,
+        "pops": 4000,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 4000,
+        "m": 11120,
+        "graph_kind": "real_road",
+        "algorithm": "dijkstra_array",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 1186424,
+          "adjacency_list": 1387736,
+          "adjacency_matrix": 128000128
+        },
+        "time_per_query": 0.12940691650146618,
+        "peak_memory_bytes": 410480,
+        "relaxations": 16000000,
+        "pops": 4000,
+        "passes": 0
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 4000,
+        "m": 11120,
+        "graph_kind": "real_road",
+        "algorithm": "bellman_ford",
+        "feasible": true,
+        "note": "",
+        "rep_memory": {
+          "edge_list": 1186424,
+          "adjacency_list": 1387736,
+          "adjacency_matrix": 128000128
+        },
+        "time_per_query": 0.06516062747687101,
+        "peak_memory_bytes": 160776,
+        "relaxations": 128653,
+        "pops": 0,
+        "passes": 20
+      },
+      {
+        "experiment": "real_subgraph",
+        "n": 4000,
+        "m": 11120,
+        "algorithm": "floyd_warshall",
+        "feasible": false,
+        "note": "n>2500",
+        "time_per_query": null,
+        "peak_memory_bytes": null
+      }
+    ],
+    "full": {
+      "experiment": "real_full",
+      "n": 264346,
+      "m": 733846,
+      "dijkstra_heap_full_sssp": 0.8027936069993302,
+      "dijkstra_heap_early_stop": 0.4660400820430368,
+      "peak_memory_bytes": 12752256,
+      "rep_memory": {
+        "edge_list": 111581028,
+        "adjacency_list": 104873268,
+        "adjacency_matrix": 559030461856
+      },
+      "matrix_bytes_needed": 559030461728,
+      "infeasible": {
+        "dijkstra_array": "komsuluk matrisi ~559 GB gerektirir -- bellege sigmaz",
+        "floyd_warshall": "O(V^2)~559 GB bellek ve O(V^3)~1.8e+16 islem -- uygulanamaz",
+        "bellman_ford": "O(V*E)~1.9e+11 islem/sorgu -- pratik degil"
+      }
+    }
+  }
+}
