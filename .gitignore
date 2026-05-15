@@ -2,11 +2,6 @@
 __pycache__/
 *.pyc
 
-# Buyuk ham veri (gerektiginde data_loader.ensure_dimacs_ny() otomatik indirir)
-data/raw/*.gr
-data/raw/*.gz
-data/generated/*
-
 # LibreOffice gecici kilit dosyalari
 .~lock.*#
 
